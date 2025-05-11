@@ -15,10 +15,10 @@ KITTY_DIR=~/.config/kitty
 FONTCONFIG_DIR=~/.config/fontconfig
 
 # Rename all old directories !! Overwrites existing !!
-[ -d "$HYPR_DIR" ] && mv -f "$HYPR_DIR" "$HYPR_DIR.old"
-[ -d "$WAYBAR_DIR" ] && mv -f "$WAYBAR_DIR" "$WAYBAR_DIR.old"
-[ -d "$KITTY_DIR" ] && mv -f "$KITTY_DIR" "$KITTY_DIR.old"
-[ -d "$FONTCONFIG_DIR" ] && mv -f "$FONTCONFIG_DIR" "$FONTCONFIG_DIR.old"
+[ -d "$HYPR_DIR" ] && rm -r "$HYPR_DIR.old" && mv -f "$HYPR_DIR" "$HYPR_DIR.old"
+[ -d "$WAYBAR_DIR" ] && rm -r "$WAYBAR_DIR.old" && mv -f "$WAYBAR_DIR" "$WAYBAR_DIR.old"
+[ -d "$KITTY_DIR" ] && rm -r "$KITTY_DIR.old" && mv -f "$KITTY_DIR" "$KITTY_DIR.old"
+[ -d "$FONTCONFIG_DIR" ] && rm -r "$FONTCONFIG_DIR.old" && mv -f "$FONTCONFIG_DIR" "$FONTCONFIG_DIR.old"
 
 # Place all files from the repo in the required locations
 for dir in hypr waybar kitty fontconfig; do
