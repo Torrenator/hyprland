@@ -9,10 +9,10 @@ sudo pacman -S --noconfirm --needed hyprland hyprpaper hyprlock waybar swaync nm
 sudo pacman -S --noconfirm --needed ttf-nerd-fonts-symbols freetype2 fontconfig cairo libxft ttf-jetbrains-mono-nerd
 
 # Clear any existing directories
-$HYPR_DIR = ~/.config/hypr
-$WAYBAR_DIR = ~/.config/waybar
-$KITTY_DIR = ~/.config/kitty
-$FONTCONFIG_DIR = ~/.config/fontconfig
+HYPR_DIR = ~/.config/hypr
+WAYBAR_DIR = ~/.config/waybar
+KITTY_DIR = ~/.config/kitty
+FONTCONFIG_DIR = ~/.config/fontconfig
 
 # Rename all old directories !! Overwrites exisiting !!
 mv $HYPR_DIR $HYPER_DIR.old
